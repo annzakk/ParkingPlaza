@@ -14,13 +14,13 @@ public class ParkingLotManager { //
 	    }
 
 	    public static void main(String[] args) {
-	        int numberOfSlots = 10;// the number of slots  // would love to learn how to write it myself instead
+	        int numberOfSlots = 2;// the number of slots  // would love to learn how to write it myself instead
 	        int numberOfIterations = 5;// number of iterations
 	        new ParkingLotManager(numberOfSlots).start(numberOfIterations); //the main go through the number of iterations
 	    }
 
 	    private void start(int numberOfIterations) {
-	        List<Ticket> tickets = new ArrayList<>(); //use the arraylist to and a random for the type 
+	        List<Ticket> tickets = new ArrayList<>(); //use the arraylist to and a random for the type, ticket is used for the number of spaces
 	        Random random = new Random();
 	        for (int i = 0; i < numberOfIterations; i++) { //for loop the number of iterations. would be useful if we would get an input
 	            int nextInt = random.nextInt(1 + tickets.size()); //the nextInt get a one size bigger ticket
